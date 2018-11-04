@@ -24,7 +24,7 @@ take token and pass it in the Header of url
 
 http://localhost:1337/teste/teste
 
-with `Authorization: token xyz.abc`
+with `Authorization: token xyz1tuv.abc2def.qwe3rty`
 
 ### Version info
 
