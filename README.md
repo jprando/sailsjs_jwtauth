@@ -26,6 +26,17 @@ http://localhost:1337/teste/teste
 
 with `Authorization: token xyz1tuv.abc2def.qwe3rty`
 
+### look changes in
+
+- [/api/services/jwtauth.js
+  ](https://github.com/jprando/sailsjs_jwtauth/blob/master/api/services/jwtauth.js)
+- [/config/policies.js](https://github.com/jprando/sailsjs_jwtauth/blob/master/config/policies.js)
+- [/api/policies/isAuthenticate.js](https://github.com/jprando/sailsjs_jwtauth/blob/master/api/policies/isAuthenticate.js)
+- [/api/controllers/teste/login.js
+  ](https://github.com/jprando/sailsjs_jwtauth/blob/master/api/controllers/teste/login.js)
+- [/api/controllers/teste/teste.js
+  ](https://github.com/jprando/sailsjs_jwtauth/blob/master/api/controllers/teste/teste.js)
+
 ### Version info
 
 This app was originally generated on Sat Nov 03 2018 23:48:08 GMT-0300 (-03) using Sails v1.0.2.

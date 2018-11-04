@@ -12,7 +12,7 @@ const jwtauth = {
   }
 
   // getUser: function(token, cb) {
-  //   tokenauth.verifyToken(token, (err, data) => {
+  //   jwtauth.verifyToken(token, (err, data) => {
   //     if (err) {
   //       return cb(err);
   //     }

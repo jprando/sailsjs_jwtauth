@@ -12,7 +12,7 @@ module.exports = {
   fn: async (inputs, exits, m) => {
     m.sails.log.info('teste ok user %s', m.req.User.userName);
     return exits.success({
-      user: m.req.User,
+      token: m.req.User,
       nome: 'Jeudi Teste OK'
     });
   }
