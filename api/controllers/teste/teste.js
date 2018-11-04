@@ -1,7 +1,7 @@
 // api/controller/teste/teste
 
 module.exports = {
-  friendlyName: 'Login do Usuario',
+  friendlyName: 'Teste privado, somente para usuarios logados',
   exits: {
     success: {
       description: 'Teste retorna um valor qualqer',
