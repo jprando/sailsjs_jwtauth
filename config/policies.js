@@ -16,6 +16,10 @@ module.exports.policies = {
    *                                                                          *
    ***************************************************************************/
 
-  '*': 'isAuthenticate',
-  'teste/login': true
+  '*': true /** << all public, but ... */,
+  /** this controller */
+  teste: {
+    login: true /** << this action is public */,
+    '*': 'isAuthenticate' /** all rest need auth */
+  }
 };

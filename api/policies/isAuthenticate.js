@@ -13,7 +13,7 @@ module.exports = async function isAuthenticate(req, res, proceed) {
   let token = (tokenAuth && tokenAuth[1]) || false;
 
   if (!token) {
-    naoAutorizado();
+    res.badRequest();
     return;
   }
 

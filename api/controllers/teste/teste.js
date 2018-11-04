@@ -10,10 +10,11 @@ module.exports = {
     }
   },
   fn: async (inputs, exits, m) => {
-    m.sails.log.info('teste ok user %s', m.req.User.userName);
-    return exits.success({
+    let firstUserName = m.req.User.userName.split(' ')[0];
+    m.sails.log.info('teste ok user %s', firstUserName);
+    exits.success({
       token: m.req.User,
-      nome: 'Jeudi Teste OK'
+      nome: firstUserName + ' Teste OK'
     });
   }
 };
