@@ -1,4 +1,4 @@
-// api/controller/teste/login
+// api/controllers/teste/login
 
 module.exports = {
   friendlyName: 'Login do Usuario',
@@ -14,8 +14,7 @@ module.exports = {
     }
   },
   fn: async function(inputs, exits, m) {
-    let tokenData = {};
-    tokenData.userName = inputs.user;
+    let tokenData = { userName: inputs.user };
     let token = sails.services.jwtauth.generateToken(tokenData);
     m.sails.log.info('user %s login', inputs.user);
     return exits.sucess({ token: token });
